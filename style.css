@@ -1,5 +1,5 @@
 body {
-  background-image: url(./iamges/zomie-bcg.jpg);
+  background-image: url(./images/zomie-bcg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   font-size: 40px;
@@ -86,13 +86,13 @@ h1 {
 }
 
 .rock {
-  background-image: url(./iamges/rock.png);
+  background-image: url(./images/rock.png);
 }
 .paper {
-  background-image: url(./iamges/paper.png);
+  background-image: url(./images/paper.png);
 }
 .scissors {
-  background-image: url(./iamges/scissors.png);
+  background-image: url(./images/scissors.png);
 }
 .result-container {
   display: flex;

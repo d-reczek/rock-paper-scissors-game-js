@@ -19,25 +19,21 @@ rockDiv.addEventListener("click", () => {
   userChoice = getUserChoiceItem("rock");
   computerChoice = getComputerChoice();
   computerChoiceNameChange = nameChange();
-  // console.log("user", userChoice);
-  // console.log("comp", computerChoice);
-  // console.log(computerChoiceNameChange);
+
   compare();
 });
 
 paperDiv.addEventListener("click", () => {
   userChoice = getUserChoiceItem("paper");
   computerChoice = getComputerChoice();
-  // console.log("user", userChoice);
-  // console.log("comp", computerChoice);
+
   computerChoiceNameChange = nameChange();
   compare();
 });
 scissorsDiv.addEventListener("click", () => {
   userChoice = getUserChoiceItem("scissors");
   computerChoice = getComputerChoice();
-  // console.log("user", userChoice);
-  // console.log("comp", computerChoice);
+
   computerChoiceNameChange = nameChange();
   compare();
 });
@@ -67,8 +63,6 @@ function compare() {
     (userChoice === "paper" && computerChoice === "rock") ||
     (userChoice === "scissors" && computerChoice === "paper")
   ) {
-    // console.log("wygrana");
-
     resultSpan.textContent =
       "Przeciwnik wybrał " + computerChoiceNameChange + " WYGRAŁEŚ! :)";
     userScore++;
@@ -88,7 +82,6 @@ function compare() {
     (userChoice === "paper" && computerChoice === "scissors") ||
     (userChoice === "scissors" && computerChoice === "rock")
   ) {
-    // console.log("przegrana");
     resultSpan.textContent =
       "Przeciwnik wybrał " + computerChoiceNameChange + " przegrałes";
     computerScore++;
@@ -109,7 +102,6 @@ function compare() {
     (userChoice === "paper" && computerChoice === "paper") ||
     (userChoice === "scissors" && computerChoice === "scissors")
   ) {
-    // console.log("remis");
     resultSpan.textContent =
       "Przeciwnik wybrał " + computerChoiceNameChange + " jest remis";
     resultSpan.classList.add("draw");
@@ -122,7 +114,6 @@ function compare() {
 
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
-  // console.log(randomNumber);
   if (randomNumber === 0) {
     return "rock";
   }
